@@ -48,6 +48,7 @@ public class ClientFixApp implements Application {
         logTagValueWithTitle(message, 52, "SendingTime");
         logTagValueWithTitle(message, 56, "TargetCompID");
         logTagValueWithTitle(message, 58, "Text");
+        logTagValueWithTitle(message, 39, "OrdStatus");
         log.info("----------------------------------------");
         log.info("--------------- fromApp ----------------" );
     }

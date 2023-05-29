@@ -57,7 +57,7 @@ public class AppLogonListener implements ApplicationListener<ContextRefreshedEve
         }
     }
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 1000)
     public void clientStatus(){
         log.info("Client Status | Logged on: {}. Current Time: {}", threadedSocketInitiator.isLoggedOn(), LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
     }
